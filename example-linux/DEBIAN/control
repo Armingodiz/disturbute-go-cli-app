@@ -1,0 +1,5 @@
+Package: example
+Version: 0.6.3
+Architecture: all
+Maintainer: armingodarzi1380@gmail.com
+Description: cli tool for example.com
