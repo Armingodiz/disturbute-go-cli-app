@@ -1,0 +1,31 @@
+{
+  "name": "utopiops",
+  "version": "0.0.6",
+  "description": "cli tool for utopiops.com",
+  "main": "postinstall.js",
+  "scripts": {
+    "postinstall": "node postinstall.js install",
+    "preuninstall": "node postinstall.js uninstall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utopiops/homebrew-utopiops.git"
+  },
+  "author": "armingodarzi1380@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/utopiops/homebrew-utopiops/issues"
+  },
+  "goBinary": {
+    "name": "npm-utopiops",
+    "path": "./bin"
+  },
+  "homepage": "https://github.com/utopiops/homebrew-utopiops#readme",
+  "files": [
+    "dist",
+    "postinstall.js"
+  ],
+  "dependencies": {
+    "mkdirp": "^1.0.4"
+  }
+}
