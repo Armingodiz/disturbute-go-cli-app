@@ -17,7 +17,13 @@ For homebrew and apt you need to create a github release(or push you binary file
 * If you want to install with `brew appName` you need to use homebrew-core (if your app is open-source) or cask. For more information visit [here](https://github.com/Homebrew/brew#homebrew)
 
 ### apt
-
+1. build your app and make a binary named [appName]
+2. make a directory named linux 
+3. make a directory named DEBIAN and put control file in it
+4. make a directory named usr/local/bin and put your binary in it
+5. run this command at root of your project `dpkg-deb -b <path/to/source/linux> <destination/dir>`
+6. now you can install created deb file in destination dir with `apt install <deb-file.deb>` 
+* check this [example](https://github.com/Armingodiz/disturbute/blob/master/example-linux)
 For more information visit [here](https://www.bustawin.com/distribute-apps-apt/)
 
 ### npm
