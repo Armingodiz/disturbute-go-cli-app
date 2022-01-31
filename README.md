@@ -34,8 +34,12 @@ First you need [goreleaser](https://goreleaser.com/install/) and npm installed o
 4. If your app is open-source continue in this directory and if it is not make a new directory and move dist folder to it
 5. run `npm init`
 6. download [postinstall.js](https://github.com/Armingodiz/disturbute/blob/master/postinstall.js) and add it to your dir 
-7. cahnge package.json:
-* 
+7. change example in postinstall.js line 144 with the name of your package in step 2
+8. Add scripts, goBinary, files, dependencies to your package.json like [this](https://github.com/Armingodiz/disturbute/blob/master/package.json)
+9. run `npm publish`
+10. now you can install your binary with `npm i package-name`
+
+
 This solotion is a changed version for this [solotion](https://blog.xendit.engineer/how-we-repurposed-npm-to-publish-and-distribute-our-go-binaries-for-internal-cli-23981b80911b)
 
 
